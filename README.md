@@ -10,18 +10,18 @@ Install using [fisher](https://github.com/jorgebucaran/fisher):
 fisher install lideming/fish-commands
 ```
 
-## git-cd
+## cdg
 
 `cd` into relative path of current git repo.
 
 Example: (assuming `~/git/fish-commands` is the root of a git repo)
 
 ```
-~/git/fish-commands/completions> git-cd functions
+~/git/fish-commands/completions> cdg functions
 ~/git/fish-commands/functions>
 ```
 
-## cd-repo
+## cdr
 
 `cd` into any repository from anywhere.
 
@@ -36,11 +36,11 @@ set -U __git_repo_roots ~/git ~/projects
 Examples:
 
 ```
-~/git/fish-commands/completions> cd-repo dotfiles
+~/git/fish-commands/completions> cdr dotfiles
 ~/git/dotfiles>
 ```
 
 ```
-~/git/dotfiles> cd-repo fish-commands/functions
+~/git/dotfiles> cdr fish-commands/functions
 ~/git/fish-commands/functions>
 ```

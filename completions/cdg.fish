@@ -1,6 +1,6 @@
-complete -f -c git-cd -a '(__git-cd_complete)'
+complete -f -c cdg -a '(__cdg_complete)'
 
-function __git-cd_complete
+function __cdg_complete
     set -l current_word (commandline -t)
     set -l repo_root (git rev-parse --show-toplevel 2> /dev/null)
     if test -n "$repo_root"

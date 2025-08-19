@@ -1,6 +1,6 @@
-complete -f -c cd-repo -a '(__cd-repo_complete)'
+complete -f -c cdr -a '(__cdr_complete)'
 
-function __cd-repo_complete
+function __cdr_complete
     set -l current_word (commandline -t)
     for root in $__git_repo_roots ;
         set -l dir_completions (__fish_complete_directories $root/$current_word $root)

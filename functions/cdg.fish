@@ -1,4 +1,4 @@
-function git-cd
+function cdg
     set -l repo_root (git rev-parse --show-toplevel 2> /dev/null)
     if test -n "$repo_root"
         set -l folder $argv[1]

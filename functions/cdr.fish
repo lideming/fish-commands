@@ -1,4 +1,4 @@
-function cd-repo
+function cdr
     set -l folder $argv[1]
     for root in $__git_repo_roots ;
         if test -d "$root/$folder" ;
